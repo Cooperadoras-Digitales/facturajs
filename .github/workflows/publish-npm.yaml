@@ -15,6 +15,7 @@ jobs:
           # Defaults to the user or organization that owns the workflow file
           scope: '@cooperadoras-digitales'
       - run: yarn
-      - run: yarn publish // for Yarn version 2, use `yarn npm publish` instead
+      # for Yarn version 2, use `yarn npm publish` instead
+      - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
