@@ -1,5 +1,5 @@
 {
-  "name": "facturajs",
+  "name": "@cooperadoras-digitales/facturajs",
   "description": "Comunicación con los web services de AFIP utilizando nodejs.",
   "author": "Emilio Astarita",
   "licence": "MIT",
@@ -39,5 +39,6 @@
     "@types/request": "^2.48.8",
     "prettier": "^2.2.1",
     "typescript": "^4.1.3"
-  }
+  },
+  "license": "MIT"
 }

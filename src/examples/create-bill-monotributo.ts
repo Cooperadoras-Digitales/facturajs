@@ -27,7 +27,7 @@ async function monotributoExample() {
     });
     console.log('Last bill number: ', res.CbteNro);
     const num = res.CbteNro;
-    const next = num + 1;
+    const next = num === undefined  ? 1 : num + 1;
     console.log('Next bill number to create: ', next);
     const resBill = await afip.createBill({
         Auth: { Cuit: cuit },
